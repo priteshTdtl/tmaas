@@ -1,0 +1,336 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+.bgside.active {
+  background-color: white !important;
+  color: black !important;
+  margin: 0 0.5em 0 0.5em;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.btn-dark-green {
+  color: #000000;
+  background-color: #32cd32;
+  border-color: #32cd32;
+}
+
+.btn-dark-green:hover {
+  color: #000000;
+  background-color: #32cd32;
+  border-color: #101110;
+}
+
+.btn-faint-green {
+  color: #000000;
+  background-color: #98fb98;
+  border-color: #98fb98;
+}
+.btn-faint-green:hover {
+  color: #000000;
+  background-color: #98fb98;
+  border-color: #161816;
+}
+
+.btn-faint-violet {
+  color: #000000;
+  background-color: #fd5c63;
+  border-color: #fd5c63;
+}
+.btn-faint-violet:hover {
+  color: #000000;
+  background-color: #fd5c63;
+  border-color: #080808;
+}
+
+.btn-dark-violet {
+  color: #000000;
+  background-color: #ff033e;
+  border-color: #ff033e;
+}
+.btn-dark-violet:hover {
+  color: #000000;
+  background-color: #ff033e;
+  border-color: #080808;
+}
+
+.btn-ashgray {
+  background: #ffd700;
+  color: #000000;
+}
+.btn-ashgray:hover {
+  background: #ffd700;
+  color: #000000;
+  border-color: #080808;
+}
+.sidebar {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+  padding-top: 5rem; /* Ensure the navbar appears above other elements */
+  /* background: linear-gradient(120deg, #807efc, rgb(217, 31, 227)); */
+  /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+  /* background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%); */
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.gradient-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar appears above other elements */
+}
+
+.dashbtnm {
+  width: 20em;
+}
+
+@media screen and (max-width: 480px) {
+  .submitform {
+    margin-left: 4em;
+    margin-top: 4.5em;
+  }
+  .dash4 {
+    margin-top: 4em;
+    margin-left: 4em;
+    margin-bottom: 2em;
+  }
+
+  .nav-profile-picture {
+    height: 100%;
+  }
+
+  .adminuserlist {
+    margin-top: 32%;
+    /* padding-top: -25%; */
+    margin-left: 10%;
+    margin-bottom: 15%;
+  }
+  .interview_list {
+    margin-top: 7em;
+    margin-bottom: 1em;
+    margin-left: 10em;
+  }
+  .letterpage {
+    margin-top: 5em;
+    margin-left: 4em;
+    margin-bottom: 1em;
+  }
+  .feedbacklist {
+    margin-top: 8em;
+    margin-left: 18%;
+  }
+  .applicationlist {
+    margin-top: 8em;
+    margin-left: 4em;
+  }
+  .jobresult {
+    margin-top: 7em;
+  }
+  .imgpersonality {
+    width: 16em;
+  }
+  .personality {
+    margin: 4.3em 0em 1em 3.9em;
+  }
+  .personality2 {
+    display: block !important;
+    align-items: initial !important;
+  }
+
+  .dashboard {
+    margin-left: 5em;
+    /* overflow-x: hidden; */
+    margin-top: 5em !important;
+  }
+}
+@media screen and (min-width: 480px) {
+  /* dashboard user */
+  .dash4 {
+    margin-top: 4em;
+    margin-left: 4em;
+    margin-bottom: 2em;
+  }
+  .submitform {
+    margin-left: 4em;
+    margin-top: 3em;
+  }
+  /* curd operation */
+  .adminuserlist {
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+  /* interview_list */
+  .interview_list {
+    margin-top: 5em;
+    margin-left: 10em;
+  }
+  .letterpage {
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+  }
+  .feedbacklist {
+    margin-top: 8em;
+    margin-left: 18%;
+  }
+  .applicationlist {
+    margin-top: 8em;
+    margin-left: 5em;
+  }
+  .jobresult {
+    margin-top: 5em;
+    margin-left: 4em;
+  }
+  .imgpersonality {
+    width: 29em;
+  }
+  .personality {
+    margin: 4.7em 0.5em 1em 3.3em;
+  }
+  .personality2 {
+    margin: 1em 1.5em 1.4em 1.1em;
+  }
+  .dashboard {
+    margin-left: 5em;
+    /* overflow-x: hidden; */
+    margin-top: 4em !important;
+  }
+}
+@media screen and (width >= 768px) {
+  .submitform {
+    margin-left: 200px;
+  }
+  .dash4 {
+    margin-top: 4em;
+    margin-left: 14em;
+    margin-bottom: 2em;
+  }
+
+  .feedbacklist {
+    margin-left: 13%;
+  }
+  .adminuserlist {
+    margin-top: 5em;
+    margin-left: 13em;
+  }
+  .interview_list {
+    margin-top: 5em;
+    margin-left: 15em;
+  }
+  .letterpage {
+    margin-top: 5em;
+    margin-left: 12em;
+    margin-bottom: 1em;
+  }
+  .feedbacklist {
+    margin-top: 5em;
+    margin-left: 13em;
+  }
+  .applicationlist {
+    margin-top: 5em;
+    margin-left: 14em;
+  }
+  .jobresult {
+    margin-top: 5em;
+    margin-left: 8em;
+  }
+  .divresultpos {
+    margin-left: 11em;
+  }
+  .imgpersonality {
+    width: 30em;
+  }
+  .personality {
+    margin: 5em 1.5em 1.4em 13.7em;
+  }
+  .personality2 {
+    margin: 1em 1.5em 1.4em 6.1em;
+  }
+  .dashboard {
+    margin-left: 13em;
+    /* overflow-x: hidden; */
+    margin-top: 4em !important;
+  }
+}
+
+/* dashnotification */
+.notification-item {
+  margin-bottom: 15px;
+}
+
+.notification-item p {
+  margin: 0;
+  padding: 0;
+}
+.notification-msg {
+  font-weight: 550;
+}
+.notification-time {
+  font-size: 0.8rem;
+  color: #999;
+}

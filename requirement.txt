@@ -1,0 +1,4 @@
+--pre
+--no-index
+--find-links /my/local/archives
+--find-links http://some.archives.com/archives

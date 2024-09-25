@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /subfolder
+ 
+# Handle requests to the root directory
+RewriteRule ^$ /index.html [L]
+ 
+# Handle all other requests
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

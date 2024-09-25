@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interview Invitation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header img {
+        max-width: 100%;
+        height: auto;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        /* background-color: #007bff; */
+        color: #286fcd;
+        /* text-decoration: none; */
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="https://image.shutterstock.com/image-vector/job-interview-typographic-header-idea-600w-1853211679.jpg" alt="Job Interview Typographic Header Idea">
+    </div>
+    <p>Dear {{ interview_instance.candidate }},</p>
+    <p>You have an interview scheduled with {{ interview_instance.interviewer }} and additional members on {{ interview_instance.date }} at {{ interview_instance.time }}.</p>
+    <p>Please use the following link to join the meeting:</p>
+    <a href="{{ interview_instance.meetLink }}" class="button">Join Meeting</a>
+    <p>Best regards,<br>Talent Acquisition Team<br> TDTL</p>
+</div>
+</body>
+</html>

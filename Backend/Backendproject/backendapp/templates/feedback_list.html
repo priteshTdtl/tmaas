@@ -1,0 +1,8 @@
+<!-- feedback/templates/feedback_list.html -->
+<h1>Feedback List</h1>
+
+<ul>
+    {% for feedback_item in feedback_items %}
+        <li>{{ feedback_item.get_rating_display }} - {{ feedback_item.feedback }}</li>
+    {% endfor %}
+</ul>

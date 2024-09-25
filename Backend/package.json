@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "axios": "^1.6.7",
+    "bcrypt": "^5.1.1",
+    "survey-core": "^1.9.127",
+    "survey-react-ui": "^1.9.127"
+  }
+}

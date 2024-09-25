@@ -1,0 +1,205 @@
+/* my changes*/
+
+.candidate {
+  height: 150px;
+  /* margin-left: 5px; */
+  /* margin-right: 5px; */
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  /* background-color: #340134; */
+}
+
+.admin {
+  height: 150px;
+  width: 317px;
+  margin-right: 1.4%;
+  border-radius: 15px;
+  background-color: aliceblue;
+}
+
+.hr {
+  height: 150px;
+  width: 235px;
+  margin-left: 12px;
+  margin-right: 1px;
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.headline {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 20px;
+  color: aliceblue;
+}
+.headline1 {
+  text-align: left;
+  margin-top: 30px;
+  padding-top: 20px;
+  margin-left: 20px;
+  color: aliceblue;
+}
+
+.score {
+  text-align: left;
+  font-size: 25px;
+  margin-left: 20px;
+  color: aliceblue;
+}
+
+.ab {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Add some spacing and border */
+
+/* .bc {
+    background-color: rgba(51, 153, 255, 1)
+}
+
+.cd {
+    background-color: rgba(229, 83, 83, 1)
+}
+
+.de {
+    background-color: rgba(249, 177, 21, 1);
+} */
+
+.rejected {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.review {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.selected {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.interview {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.applied {
+  /* background-color: rgb(153, 102, 255); */
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.as {
+  height: 10%;
+  width: 10px;
+}
+
+.line {
+  width: 500px;
+  height: 100px;
+}
+
+.hr.horizontal {
+  background-color: transparent;
+}
+
+.hr.horizontal.dark {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.4),
+    transparent
+  );
+}
+
+.chart-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.linechart {
+  margin-top: 2rem;
+  margin-right: 60px;
+  /* width: 100%; */
+  /* flex-direction: row; */
+}
+
+.usersicon {
+  text-align: right;
+  height: 100px;
+}
+
+@media (max-width: 767px) {
+  /* Styles for mobile devices */
+  .candidate,
+  .admin,
+  .hr {
+    height: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .admin,
+  .hr {
+    width: auto;
+  }
+
+  .headline {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .score {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets */
+  .admin {
+    width: 220px;
+  }
+
+  .hr {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* Styles for tablets */
+  .admin {
+    width: 170px;
+  }
+}
+/* .admincardhover {
+  transition: transform 0.3s ease;
+}
+
+.admincardhover:hover {
+  transform: scale(1.1);
+} */
